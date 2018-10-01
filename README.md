@@ -1,25 +1,45 @@
 # jest-haste-module-name-mapper
 
+<!-- Love Jest? Please consider supporting our collective: 👉  https://opencollective.com/jest/donate -->
+
+## 🐛 Bug Report
+
 Utilizing both `hase` and `moduleNameMapper` config options causes Jest's module resolution to fail.
 
-### Steps to Reproduce
+## To Reproduce
 
-1. Clone this test case repository.
+1. Clone the [test case repository](https://github.com/HealthTeacher/jest-haste-module-name-mapper).
 1. `yarn install`
 1. `yarn test`
 
-### Expected Result
+## Expected behavior
 
 The required module resolves and the test passes.
 
-### Actual Result
+## Link to repl or repo (highly encouraged)
 
-The required module does not resolve and the test fails throwing an error.
+https://github.com/HealthTeacher/jest-haste-module-name-mapper
+
+## Run `npx envinfo --preset jest`
+
+Paste the results here:
+
+```bash
+System:
+  OS: macOS 10.14
+  CPU: x64 Intel(R) Core(TM) i7-4750HQ CPU @ 2.00GHz
+Binaries:
+  Node: 10.8.0 - ~/.asdf/shims/node
+  Yarn: 1.10.1 - /usr/local/bin/yarn
+  npm: 6.2.0 - ~/.asdf/shims/npm
+npmPackages:
+  jest: ^23.6.0 => 23.6.0
+```
 
 ### Notes
 
 * Replacing the root directory alias `require` with a relative require fixes the related test: `const Greeter = require('./components/Greeter');`
-* Relocating `components/Greeter/index.web.js` to `components/Greeter/index.web.js` also fixes the related test.
+* Relocating `components/Greeter/index.web.js` to `components/Greeter/index.js` also fixes the related test.
 * The combination of `haste` and `moduleNameMapper` config appears to cause an issue.
 
 ### Error Output
