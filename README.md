@@ -4,7 +4,7 @@
 
 ## 🐛 Bug Report
 
-Utilizing both `hase` and `moduleNameMapper` config options causes Jest's module resolution to fail.
+Utilizing both `haste` and `moduleNameMapper` config options causes Jest's module resolution to fail.
 
 ## To Reproduce
 
