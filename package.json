@@ -1,0 +1,16 @@
+{
+  "name": "jest-haste-module-name-mapper",
+  "version": "0.1.0",
+  "description": "Test case Jest, haste, and moduleNameMapper.",
+  "main": "index.js",
+  "repository": "git@github.com:HealthTeacher/jest-haste-module-name-mapper.git",
+  "author": "David Calhoun <dpcalhoun@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^23.6.0"
+  }
+}
